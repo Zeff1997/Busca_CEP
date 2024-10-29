@@ -7,6 +7,10 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.SystemColor;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.net.URI;
 
 import javax.swing.ImageIcon;
@@ -15,10 +19,6 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.SoftBevelBorder;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class Sobre extends JDialog {
 
@@ -87,8 +87,13 @@ public class Sobre extends JDialog {
 		btnGitHub.setBorder(new SoftBevelBorder(BevelBorder.RAISED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 255, 255), new Color(0, 255, 255)));
 		btnGitHub.setForeground(SystemColor.control);
 		btnGitHub.setIcon(new ImageIcon(Sobre.class.getResource("/img/guthub.png")));
-		btnGitHub.setBounds(181, 157, 64, 64);
+		btnGitHub.setBounds(182, 174, 64, 64);
 		getContentPane().add(btnGitHub);
+		
+		JLabel lblNewLabel_4 = new JLabel("Repositório");
+		lblNewLabel_4.setBackground(Color.WHITE);
+		lblNewLabel_4.setBounds(107, 197, 85, 14);
+		getContentPane().add(lblNewLabel_4);
 	}
 	
 	private void link(String site) {

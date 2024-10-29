@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="Atxy2k.jar"/>
+	<classpathentry kind="lib" path="dom4j-2.1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
